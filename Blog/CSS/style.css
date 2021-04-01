@@ -1,0 +1,11 @@
+h1{color: crimson; text-align: center; font-size: 50px;}
+
+
+div{border-width: 1px;}
+
+body{background-image: url();}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
