@@ -1,70 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            #head{
-                    background-image: url("https://flevix.com/wp-content/uploads/2019/12/bubble-animated-background.svg");
-                
-                    text-align: center;
-                    border: 1px solid black;
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    z-index: 1;
-                    overflow: hidden;
-                }
-            #content{
-                
-                border: 1px solid black;
-                background-color: rgba(255, 255, 255, 0.2);
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                min-height: 1800px;
-                margin-top: 100px;
-                overflow: hidden;
-                }
-
-                body{
-                    background-image: url("https://flevix.com/wp-content/uploads/2019/12/bubble-animated-background.svg");
-                    background-size: cover;
-                    background-repeat: no-repeat;
-
-                }
-            a{
-                text-decoration: none;
-                color: white;
-            }
-
-            li{
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 30px;
-                }
-                p{color: crimson;}
-
-                
-        </style>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="https://kit.fontawesome.com/9105612fbf.js" crossorigin="anonymous"></script>
     </head>
 
 
     <body>
+        <div>
+            <ul class="nav">
+                <li class="active"><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li style="float:right"><a href="#login">Log in</a></li></ul>
+            </div>
+
+
         <div id="head">
-            <h1><p>Compiti linkate</p></h1>
+            <h1>Compiti linkate</h1>
         </div>
+        
+
+    <!--CONTENT-->
+    <div class="content">
 
 
-        <div id="content">
+    <!--LEFT BAR-->
+    <div id="leftSideBar">
+        <p>Menu verticale</p>
+    </div>
+
+    <!--RIGHT BAR-->
+    <div id="rightSideBar">
+        <p>Altre info</p>
+    </div>
 
         <ul>
-
             <li><a href="Influencer/Docs/index.html">Inflencer</a></li>
             <li><a href="PaginaWebSuiViaggi/Docs/index.html">Pagina web sui viaggi</a></li>
             <li><a href="Blog/Docs/index.html">Blog</a></li>
-
         </ul>
 
-    </div>
+</div>
+
+    
+    <div class="footer"><p>Powered by <b>Vladyslav Kazakevych©</b></p></div>
     </body>
 </html> 
