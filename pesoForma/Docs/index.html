@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML tables</title>
+        
+        <script type="text/javascript" src="../JS/JavaScript.js"></script>
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+        <script src="https://kit.fontawesome.com/9105612fbf.js" crossorigin="anonymous"></script>
+        
+
+    </head>
+   
+
+
+    <body>
+        <div class="wrapper">
+    
+            <!--MENU-->
+            <div>
+            <ul class="nav">
+                <li class="active"><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li style="float:right"><a href="#login">Log in</a></li></ul>
+            </div>
+            
+
+            <div class="left-side-bar">
+                <p>Menu vericale</p>
+                <hr>
+
+            </div>
+            <!--BODY-->
+            <div class="content">
+
+                
+
+                <form>
+                    <fieldset>
+                        <p>La tua altezza: <input type="text" id="altezza"> cm</p>
+
+                        <label>Sesso: </label>  
+                        <select name="materiale" id="sex">
+                            <option value="Maschio">Maschio</option>
+                            <option value="Femina">Femina</option>
+                        </select>
+                        <br><br>
+
+                        <label>Eta: <input type="text" id="eta"></label>                             
+                        <br>
+
+                        <p>Peso: <input type="text" id="peso"> kg</p>
+                        <br>
+
+                        <p><input type="button" value="calcola" onclick="calcola()"></p>
+
+                        <label>Formula di Lorenz: <output type="text" id="fLorenz"></output></label>  <br>
+                        <label>Formula di Broca: <output type="text" id="fBroca"></output></label>  <br>
+                        <label>Formula di Wan der Vael: <output type="text" id="fWan"></output></label>  <br>
+                        <label>Formula di Perrault: <output type="text" id="fPerr"></output></label>  <br>
+                        <label>BMI(body max index): <output type="text" id="bmiIndex"></output></label>  <br>
+
+                    </fieldset>
+                </form>
+                  
+        </div>
+
+    </body>
+</html> 
