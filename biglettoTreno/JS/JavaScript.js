@@ -5,10 +5,10 @@ function calcola(){
 
     km = document.getElementById("km").value;
 
-    if(document.getElementById("classe1").value){
+    if(document.getElementById("classe1").checked==true){
         modPrezzo = 0.43;
     }
-    else if(document.getElementById("classe2").value){
+    else{
         modPrezzo = 0.3;
     }
 
