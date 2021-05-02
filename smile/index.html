@@ -4,20 +4,22 @@
         
         <title>Link compiti</title>
         <link rel="shortcut icon" href="https://comicvine1.cbsistatic.com/uploads/scale_small/11/113509/4107123-1136323888-J.A.R.jpg" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="../smile/css/style.css" />
         <script src="https://kit.fontawesome.com/9105612fbf.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../smile/JavaScript/javascript.js"></script>
     </head>
 
     
     <body>
         
         <div class="wrapper">
+
+        
         <!--NAVIGATION-->
         <div>
             <ul class="nav">
-                <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#login">Log in</a></li>
-            </ul>
+                <li class="active"><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li style="float:right"><a href="#login">Log in</a></li></ul>
         </div>
 
 
@@ -26,7 +28,7 @@
 
             <div class="head_content">
                 <div>
-                    <h1>Compiti linkate</h1>
+                    <h1>Logo olimpiadi</h1>
                 </div>
             </div>
         </header>
@@ -55,20 +57,13 @@
 
             <!--CONTENT-->
          <div class="content">
-             <p>Alcuni non hanno bella grafica!</p>
-            <ul>
-                <li><a href="sfidaSaltareIntorno/Docs/index.html">Sfida saltare intorno</a></li>
-                <li><a href="LibroDiRicette/Docs/index.html">Libro di ricette</a></li>
-                <li><a href="Influencer/Docs/index.html">Inflencer</a></li>
-                <li><a href="PaginaWebSuiViaggi/Docs/index.html">Pagina web sui viaggi</a></li>
-                <li><a href="Blog/Docs/index.html">Blog</a></li>
-                <li><a href="biglettoTreno/Docs/index.html">Bigletto Treno</a></li>
-                <li><a href="esercizioPerCasa/Docs/index.html">Esercizio per casa</a></li>
-                <li><a href="pesoForma/Docs/index.html">Peso forma</a></li>
-                <li><a href="tagSelection/index.html">Tag selection</a></li>
-		        <li><a href="logoOlimpiadi/index.html">Logo Olimpiadi</a></li>
-                <li><a href="smile/index.html">Smile</a></li>
-            </ul>
+            <form>
+            <h1>Smile</h1>
+            <input class="bottone" type="button" id="btnOK" value="Disegna" onclick="creaFigura()">
+            <br>
+            <br>
+            <canvas id="canvas1" width="600" height="300" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
+        </form>
          </div>
 
             <!--RIGHT BAR-->
@@ -81,10 +76,8 @@
                 <p>Altre info</p>
             </div>
 
-            
-        
-    
             <div class="footer"><p id="footer-text">Powered by <b>Vladyslav Kazakevych©</b></p></div>
-        </div> 
-</body>
+        </div>
+
+        </body>
 </html>
