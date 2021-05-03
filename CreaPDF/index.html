@@ -4,20 +4,23 @@
         
         <title>Link compiti</title>
         <link rel="shortcut icon" href="https://comicvine1.cbsistatic.com/uploads/scale_small/11/113509/4107123-1136323888-J.A.R.jpg" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="../CreaPDF/css/style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/9105612fbf.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../CreaPDF/JavaScript/javascript.js"></script>
     </head>
 
     
     <body>
         
         <div class="wrapper">
+
+        
         <!--NAVIGATION-->
         <div>
             <ul class="nav">
-                <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#login">Log in</a></li>
-            </ul>
+                <li class="active"><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li style="float:right"><a href="#login">Log in</a></li></ul>
         </div>
 
 
@@ -26,7 +29,7 @@
 
             <div class="head_content">
                 <div>
-                    <h1>Compiti linkate</h1>
+                    <h1>CREA PDF</h1>
                 </div>
             </div>
         </header>
@@ -55,21 +58,23 @@
 
             <!--CONTENT-->
          <div class="content">
-             <p>Alcuni non hanno bella grafica!</p>
-            <ul>
-                <li><a href="sfidaSaltareIntorno/Docs/index.html">Sfida saltare intorno</a></li>
-                <li><a href="LibroDiRicette/Docs/index.html">Libro di ricette</a></li>
-                <li><a href="Influencer/Docs/index.html">Inflencer</a></li>
-                <li><a href="PaginaWebSuiViaggi/Docs/index.html">Pagina web sui viaggi</a></li>
-                <li><a href="Blog/Docs/index.html">Blog</a></li>
-                <li><a href="biglettoTreno/Docs/index.html">Bigletto Treno</a></li>
-                <li><a href="esercizioPerCasa/Docs/index.html">Esercizio per casa</a></li>
-                <li><a href="pesoForma/Docs/index.html">Peso forma</a></li>
-                <li><a href="tagSelection/index.html">Tag selection</a></li>
-		        <li><a href="logoOlimpiadi/index.html">Logo Olimpiadi</a></li>
-                <li><a href="smile/index.html">Smile</a></li>
-                <li><a href="CreaPDF/index.html">Crea PDF</a></li>
-            </ul>
+           
+            <form>
+                
+                <fieldset>
+                    <p>Inserire i dati</p>
+                    <p>Nome: <input type="text" id="nome"></p>
+                    <p>Cognome: <input type="text" id="cognome"></p>
+                    <p>Numero di telefono: <input type="text" id="numero"></p>
+                    <p>L'email: <input type="text" id="email"></p>
+                    <p>Messaggio: <input type="text" class="mex" id="mess"></p>
+                    <p><input type="button" value="CREA PDF" class="bottone" onclick="creaPDF()"></p>
+                </fieldset>
+                
+            </form>
+            <br>
+            <br>
+
          </div>
 
             <!--RIGHT BAR-->
@@ -82,10 +87,8 @@
                 <p>Altre info</p>
             </div>
 
-            
-        
-    
             <div class="footer"><p id="footer-text">Powered by <b>Vladyslav Kazakevych©</b></p></div>
-        </div> 
-</body>
+        </div>
+
+        </body>
 </html>
